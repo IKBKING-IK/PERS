@@ -846,8 +846,4 @@ def l_menu_select():
 	print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mIMTIAZ_BALOCH\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 	print "  \033[1;91m«---•◈•---Developed By DAD❤OF❤BAD--•◈•---»" #Dev:DAD-OFBAD
 	print '\033[1;95mProcess Has Been Completed Press➡ Type 0 Enter↩ Next Type 0 (logout)↩\033[1;97m....'
-	raw_input('Back')
-	menu()
-    
-if __name__ == '__main__':
-	menu()
+	

